@@ -1,5 +1,7 @@
 name: First Workflow
-on: workflow_dispatch
+on: 
+  release:
+    types: [created]
 jobs:
   first-job:
     runs-on: ubuntu-latest
